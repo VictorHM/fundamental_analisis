@@ -14,23 +14,26 @@ head = {
         "X-Requested-With": "XMLHttpRequest"
 }
 url_list = []
-#symbol_url = []
+
 # Funcion para construir la URL a la que conectarse.
 def build_url(symb):
-  connector = '?s='
-  form_url = 'https://seekingalpha.com/symbol/' + symb.upper() + connector + symb.lower()
+  #connector = '?s='
+  form_url = 'https://seekingalpha.com/symbol/' + symb.upper() + 'income-statement' 
+  #connector + symb.lower()
 #  symbol_url = symbol_url + [fomr_url]
   return form_url
 
+# TODO modulo que recibe lista de urls y conecta con SeekingAlpha para descargar
+# los datos.
+def Download(url):
+  
 
-# TODO Debe aceptar parametros que son los simbolos de las empresas en bolsa.
-# Accede a seeking alpha y descarga los datos de fundamentales disponibles.
-
+# TODO Permitir mas opciones con sus argumentos. Parse en bucle las opciones y
+# las agrupa con sus argumentos para mejorar la busqueda.
+# IDEA 1: opcion '-n' seguido del nombre que se da al directorio con los
+# archivos descargados.
 opts = [opt for opt in sys.argv[1:] if opt.startswith("-")]
 args = [arg for arg in sys.argv[1:] if not arg.startswith("-")]
-
-# TODO add more options. Idealmente, habria varios args por cada opt. Por ahora
-# es suficiente con esto.
 
 # Build the list of urls based on symbol name.
 for symb in args:
