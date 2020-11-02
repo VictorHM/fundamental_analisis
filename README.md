@@ -17,3 +17,7 @@ That being said, some basic points are clear:
 1. It should allow to save the results in some format of choice.  
 
 ## TODO List
+- [ ] Choose unit test framework.
+- [ ] Implement first basic tests.
+- [ ] Define better functionalities and interfaces for the code.
+- [ ] Organize the code in modules according to the previous point.
