@@ -16,11 +16,12 @@ class Company:
   
 # TODO: create a version that accepts a list of company tickers and stores the
 # results in an array of 'overview's.
-  def get_company_info(self)
-    fs = FundamentalData(self.akey, self.format)
+  def get_company_info(self):
+    fs = FundamentalData(self.key, self.format)
     self.overview = fs.get_company_overview(self.company)
 
 # TESTING FUNCTION
   def PrintData(self):
+    self.get_company_info()
     print('Overview or metadata:')
     print(self.overview)
