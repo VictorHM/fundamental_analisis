@@ -17,7 +17,6 @@ That being said, some basic points are clear:
 1. It should allow to save the results in some format of choice.  
 
 ## TODO List
-- [ ] Choose unit test framework.
-- [ ] Implement first basic tests.
-- [ ] Define better functionalities and interfaces for the code.
-- [ ] Organize the code in modules according to the previous point.
+- [ ] Implement the basic viable product: accepts a list of tickers and save the information for each company in a file (csv is a good option).
+- [ ] Determine and implement the option for taking in a csv file with tickers and produce the output as above.
+- [ ] Choose a basic unit test framework.
